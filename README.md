@@ -38,19 +38,6 @@ fn main() {
 
 ### Deref example
 
-
-```rust
-fn main() {
-    let x = 5;
-    let y = Box::new(x);
-
-    assert_eq!(5, x);
-    assert_eq!(5, *y);
-}
-```
-
-The trait that enables this behavior is known as the `Deref` trait. We can see how it works with the following example.
-
 ```rust
 struct MyBox<T>(T);
 
